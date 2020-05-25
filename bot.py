@@ -1,15 +1,13 @@
 
 import telebot
 import random
-import os
-from os import environ
-
-bot = environ['TOKEN']
 
 
 
 
-# bot = telebot.TeleBot(TOKEN)
+
+
+bot = telebot.TeleBot('Token')
 
 
 
