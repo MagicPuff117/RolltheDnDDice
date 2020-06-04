@@ -66,7 +66,7 @@ def callback(call):
         msg =f'Ваш результат: {roll_dice("d20")}'
         bot.send_message(call.message.chat.id, msg,reply_markup=keyboard)
     elif call.data == 'd100':
-        msg =f'Ваш результат: {roll_dice("d100")}'
+        msg =f'Ваш результат: {roll_dice("d100")}0'
         bot.send_message(call.message.chat.id, msg,reply_markup=keyboard)
 
 
@@ -88,7 +88,7 @@ def roll_dice(button):
     elif button == 'd20':
         return random.randint(1, 20)
     elif button == 'd100':
-        return random.randint(1, 100)
+        return random.randint(1, 10)
 
 
 bot.polling()
